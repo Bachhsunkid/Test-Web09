@@ -1,0 +1,36 @@
+.icon{
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-self: center;
+}
+
+.icon-error{
+    background-image: url(../../assets/img/search.png);
+}
+
+.icon-warning{
+    background-image: url(../../assets/img/search.png);
+}
+
+.icon-info{
+    background-image: url(../../assets/img/search.png);
+}
+
+.icon-success{
+    background-image: url(../../assets/img/search.png);
+}
+
+.icon-16 {
+    width: 16px;
+    height: 16px;
+}
+
+.icon-24 {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-32 {
+    width: 32px;
+    height: 32px;
+}

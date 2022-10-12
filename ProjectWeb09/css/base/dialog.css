@@ -1,0 +1,91 @@
+.dialog{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(51, 51, 51, 0.164);
+    
+}
+.container{
+    min-width: 400px;
+    padding: 24px 24px 0 24px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(51, 51, 51, 0.363);
+}
+h2{
+    margin: 0;
+}
+/* header */
+.dialog__header, .dialog__header__checkbox, .dialog__header__icon{
+    display: flex;
+}
+.dialog__header{
+    justify-content: space-between;
+}
+.dialog__header__checkbox{
+    align-items: center;
+    flex: 1;
+}
+.dialog__header__checkbox .col{
+margin-left: 10px;
+}
+.dialog__header__icon{
+    align-items: flex-start;
+}
+
+/* body */
+.asterisk-red{
+    color: #E60000;
+}
+.dialog__body{
+    padding: 10px;
+}
+.dialog__body__part1{
+    display: flex;
+}
+.part__rows{
+    display: flex;
+    margin-right: 8px;
+}
+.part__row{
+    margin-right: 8px;
+}
+.col{
+    padding-right: 4px;
+}
+.col-40{
+    flex-basis: 40%;
+}
+.col-60{
+    flex-basis: 60%;
+}
+.col + .col{
+    padding-left: 4px;
+}
+.radio-button{
+    display: flex;
+    margin-top: 14px;
+}
+.w-75{
+    width: 75%;
+}
+
+/* footer */
+.dialog__footer{
+    display: flex;
+    padding: 12px 0;
+    justify-content: space-between;
+    border-top: 1px solid rgb(213, 213, 213);
+}
+.header__icon .fas, .header__icon .far{
+    font-size: 24px;
+    margin-left: 8px;
+    cursor: pointer;
+}

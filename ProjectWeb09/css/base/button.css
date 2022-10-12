@@ -1,0 +1,57 @@
+.btn {
+    color: #fff;
+    height: 36px;
+    min-width: 80px;
+    font-size: 14px;
+    line-height: 36px;
+    padding: 0 16px 0 16px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn + .btn{
+    margin-left: 20px;
+}
+/* .btn i{
+    font-size: 20px;
+    position: relative;
+    top: 3.5px;
+    right: 4px;
+
+} */
+.btn__icon {
+    padding-left: 36px;
+    background-size: 20px 20px;
+    background-position-x: 12px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    
+}
+.btn__icon-add {
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-position-x: -145px;
+    background-position-y: -88px;
+    background-repeat: no-repeat;
+}
+.btn__icon-save {
+    background-image: url(../../assets/img/search.png);
+}
+.btn-green{
+    background-color: #50b83c;
+    
+}
+.btn-red{
+    background-color: #EB3333
+}
+.btn-white{
+    background-color: #FFFFFF;
+    color: #1F1F1F;
+    border: 1px solid #E6E6E6 ;
+}
+.btn:hover {
+    opacity: .7;
+}
+.btn:active {
+    opacity: .8;
+}

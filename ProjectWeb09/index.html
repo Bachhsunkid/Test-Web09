@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cukcuk</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+    <div class="row">
+        <div>
+            <h2>1. Button</h2>
+            <button class="btn btn-green">Nộp hồ sơ</button>
+            <button class="btn btn-red">Nộp hồ sơ</button>
+            <button class="btn btn-white">Nộp hồ sơ</button>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div>
+            <h2>2. Button Icon</h2>
+            <button class="btn btn-green btn__icon btn__icon-add">Lưu và thêm mới</button>
+            <button class="btn btn-green btn__icon btn__icon-save">Lưu và thêm mới</button>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <h2>3. Combobox</h2>
+            <select type="text" placeholder="Chọn/Nhập thông tin" class="combobox">
+                <option value="1">Trạng thái 1</option>
+                <option value="2">Trạng thái 2</option>
+                <option value="3">Trạng thái 3</option>
+            </select>
+        </div>
+        <!-- ??????????????? -->
+        <div> 
+            <h2>4. Combobox Seach</h2>
+            <input list="a" class="combobox" placeholder="Chon abc">
+                <datalist id="a">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+                </datalist>
+        </div>
+    </div>
+    
+
+    <div class="row">
+        <div>
+            <h2>5. Input</h2>
+            <input type="text" class="input" placeholder="Tìm kiếm theo tên/số hồ sơ">
+        </div>
+        
+        <div class="tooltip">
+            <input type="text" class="input input-error" placeholder="Tìm kiếm theo tên/số hồ sơ">
+            <span class="tooltiptext">Ten khong dung dinh dang Ten khong dung dinh dang</span>
+        </div>
+            
+    </div>
+    
+
+    <div class="row">
+        <div>
+            <h2>6. Input icon</h2>
+            <input type="text" class="input input__icon input__icon-search" placeholder="Tìm kiếm theo tên/số hồ sơ">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class = "toast">
+            <h2>7. Toast Messager</h2>
+            <div class="toast-messager ">
+                <div class="toast__header icon icon-error icon-24"></div>
+                <div class="toast__content">Nội dung đi kèm tiêu đề </div>
+                <div class="toast__footer error">&times;</div>
+            </div>
+            <div class="toast-messager ">
+                <div class="toast__header icon icon-error icon-24"></div>
+                <div class="toast__content">Nội dung đi kèm tiêu đề </div>
+                <div class="toast__footer error">&times;</div>
+            </div>
+            <div class="toast-messager ">
+                <div class="toast__header icon icon-error icon-24"></div>
+                <div class="toast__content">Nội dung đi kèm tiêu đề </div>
+                <div class="toast__footer error">&times;</div>
+            </div>
+            <div class="toast-messager ">
+                <div class="toast__header icon icon-error icon-24"></div>
+                <div class="toast__content">Nội dung đi kèm tiêu đề </div>
+                <div class="toast__footer error">&times;</div>
+            </div>
+        </div>
+    </div>
+   
+
+    <div class="row">
+        <div>
+            <h2>8. Table</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>#</th>
+                    <th>Mã nhân viên</th>
+                    <th>Họ và tên</th>
+                    <th>Vị trí/Chức vụ</th>
+                    <th>Bộ phận/Phòng ban</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>1</td>
+                    <td>0123456789</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>Tổng giám đốc</td>
+                    <td>Khối sản xuất</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>1</td>
+                    <td>0123456789</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>Tổng giám đốc</td>
+                    <td>Khối sản xuất</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>1</td>
+                    <td>0123456789</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>Tổng giám đốc</td>
+                    <td>Khối sản xuất</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <div class="row" hidden>
+        <h2>9. Pop-up</h2>
+        <div class="popup">
+            <div class="popup-wrapper">
+                
+                <div class="popup__header">
+                    <div class="header__title">Tiêu đề</div>
+                    <div class="header__button">x</div> <!-- ??????????????? -->
+                </div>
+                <div class="popup__content">Nội dung thông báo</div>
+                <div class="popup__footer">
+                        <button class="btn btn--red">Hủy</button>
+                        <button class="btn">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <h2>10. Dialog</h2> <!--Cach chia vung de nhan tab trong dialog -->
+        <div class="dialog">
+            <div class="container">
+                <div class="dialog__header">
+                    <div class="dialog__header__title">
+                        <h2>Thông tin nhân viên</h2>
+                    </div>
+                    <div class="dialog__header__checkbox">
+                        <div class="col">
+                            <input type="checkbox"  name="type">
+                            <label for=""> Là khách hàng</label><br>
+                        </div>
+                        <div class="col">
+                            <input type="checkbox" name="type">
+                            <label for=""> Là nhà cung cấp</label><br>
+                        </div>
+                    </div>
+                    <div class="dialog__header__icon">
+                        <div class="header__icon header__icon-info">
+                            <i class="far fa-question-circle"></i>
+                        </div>
+                        <div class="header__icon header__icon-close">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="dialog__body">
+                    <div class="dialog__body__part1">
+                        <div class="halfpart">
+                            <div class="part__rows">
+                                <div class="col col-40">
+                                    <div class="input-label">Mã <span class="asterisk-red">*</span></div>
+                                    <input type="text" class="input">
+                                </div>
+                                <div class="col col-60">
+                                    <div class="input-label">Tên <span class="asterisk-red">*</span></div>
+                                    <input type="text" class="input">
+                                </div>
+                            </div>
+                            <div class="part__row">
+                                <div class="col">
+                                    <div class="input-label">Đơn vị <span class="asterisk-red">*</span></div>
+                                    <input type="text" class="input">
+                                </div>
+                                
+                            </div>
+                            <div class="part__row">
+                                <div class="col">
+                                    <div class="input-label">Chức danh</div>
+                                    <input type="text" class="input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="halfpart">
+                            <div class="part__rows">
+                                <div class="col">
+                                    <div class="input-label">Ngày sinh</div>
+                                    <input type="date" class="input">
+                                </div>
+                                <div class="col">
+                                    <div class="input-label">Giới tính</div>
+                                    <div class="radio-button">
+                                        <input type="radio" name="gender">
+                                        <label for="">Nam</label><br>
+                                        <input type="radio" name="gender">
+                                        <label for="">Nữ</label><br>
+                                        <input type="radio" name="gender">
+                                        <label for="">Khác</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="part__rows">
+                                <div class="col col-60">
+                                    <div class="input-label">Số CMND</div>
+                                    <input type="text" class="input">
+                                </div>
+                                <div class="col col-40">
+                                    <div class="input-label">Ngày cấp</div>
+                                    <input type="date" class="input">
+                                </div>
+                            </div>
+                            <div class="part__row">
+                                <div class="col">
+                                    <div class="input-label">Nơi cấp</div>
+                                    <input type="text" class="input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dialog__body__part2">
+                        <div class="part__row">
+                            <div class="col">
+                                <div class="input-label">Địa chỉ</div>
+                                <input type="text" class="input">
+                            </div>
+                        </div>
+                        <div class="w-75">
+                            <div class="part__rows">
+                                <div class="col">
+                                    <div class="input-label">ĐT di động</div>
+                                    <input type="text" class="input">
+                                </div>
+                                <div class="col">
+                                    <div class="input-label">ĐT cố định</div>
+                                    <input type="text" class="input">
+                                </div>
+                                <div class="col">
+                                    <div class="input-label">Email</div>
+                                    <input type="text" class="input">
+                                </div>
+                            </div>
+                            <div class="part__rows">
+                                <div class="col">
+                                    <div class="input-label">Tài khoản ngân hàng</div>
+                                    <input type="text" class="input">
+                                </div>
+                                <div class="col">
+                                    <div class="input-label">Tên ngân hàng</div>
+                                    <input type="text" class="input">
+                                </div>
+                                <div class="col">
+                                    <div class="input-label">Chi nhánh</div>
+                                    <input type="text" class="input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dialog__footer">
+                    <div class="footer__left">
+                        <button class="btn btn-white">Hủy</button>
+                    </div>
+                    <div class="footer__right">
+                        <button class="btn btn-white">Cất</button>
+                        <button class="btn btn-green">Cất và thêm</button>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

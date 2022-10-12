@@ -1,0 +1,11 @@
+.combobox {
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    height: 40px;
+    padding: 4px 16px;
+    outline: none;
+}
+
+.combobox:focus{
+    border-color: #019160;
+}

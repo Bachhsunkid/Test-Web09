@@ -1,0 +1,31 @@
+
+.toast-messager {
+    width: 400px;
+    height: 48px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 4px;
+}
+.toast__content {
+    flex-basis: 75%;
+    line-height: 48px;
+}
+.toast__footer {
+    font-size: 24px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.error {
+    color: #ffcece;
+}
+.warning {
+    color: #ffe7af;
+}
+.success {
+    color: #baffe7;
+}
+.info {
+    color: #d8eaff;
+}
