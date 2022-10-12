@@ -55,3 +55,8 @@
 .btn:active {
     opacity: .8;
 }
+.btn-position{
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+}

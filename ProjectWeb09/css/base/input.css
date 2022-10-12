@@ -8,6 +8,8 @@
     margin-top: 8px;
 }
 .input-label{
+    font-family: 'Roboto';
+    font-size: 12px;
     font-weight: 600;
 }
 .input-400{

@@ -1,11 +1,16 @@
 .combobox {
-    border: 1px solid #bbbbbb;
+    border: 1px solid #e6e6e6;
     border-radius: 4px;
-    height: 40px;
+    height: 36px;
     padding: 4px 16px;
     outline: none;
+    width: 100%;
+    margin-top: 8px;
 }
 
 .combobox:focus{
     border-color: #019160;
+}
+.option-disabled{
+    color: #858585;
 }

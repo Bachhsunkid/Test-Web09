@@ -7,6 +7,7 @@
 @import url(../css/base/table.css);
 @import url(../css/base/toast-message.css);
 @import url(../css/base/tooltip.css);
+@import url(../css/base/noti.css);
 *{
     box-sizing: border-box;
 }

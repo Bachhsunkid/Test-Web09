@@ -1,0 +1,48 @@
+.noti{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(51, 51, 51, 0.164);
+}
+.noti-container{
+    min-width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(51, 51, 51, 0.363);
+    width: 416px;
+    height: 183px;
+    padding: 32px;
+}
+
+.noti__main{
+    display: flex;
+}
+.noti__main{
+    margin-bottom: 24px;
+    justify-content: space-between;
+}
+.noti__icon{
+    align-self: center;
+    /* flex-basis: 18%; */
+    min-width: 40px;
+}
+.noti__icon-warning{
+    background-image: url('../../assets/img/Sprites.64af8f61.svg');
+    background-repeat: no-repeat;
+    background-position: -593px -145px;
+	width: 22px;
+	height: 23px;
+}
+.noti__content{
+
+}
+.noti__footer{
+    border-top: 1px solid #E0E0E0;
+}
