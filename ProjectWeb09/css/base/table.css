@@ -7,11 +7,29 @@ tr {
 }
 th {
     text-align: left;
-    
+    padding: 14px 16px;
+    background-color: #E0E0E0;
+    border-bottom: 1px solid #bbbbbb;
+    border-right: 1px solid #bbbbbb;
+}
+.th-center{
+    text-align: center;
+    padding: 0 8px;
 }
 tr:hover td{
-    background-color: #bbbbbb;
+    background-color: #f7f7f7;
 }
 td {
+    border-bottom: 1px solid #bbbbbb;
     border-top: 1px solid #bbbbbb;
+    border-right: 1px solid #bbbbbb;
+    padding: 0 16px;
 }
+.td-center{
+    text-align: center;
+    padding: 0;
+}
+.td-left{
+    padding-left: 16px;
+}
+

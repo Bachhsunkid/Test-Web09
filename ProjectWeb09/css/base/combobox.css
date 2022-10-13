@@ -6,8 +6,14 @@
     outline: none;
     width: 100%;
     margin-top: 8px;
+    line-height: 36px;
 }
-
+.combobox-nomargin{
+    margin: 0;
+}
+.combobox-noborder{
+    border: none;
+}
 .combobox:focus{
     border-color: #019160;
 }

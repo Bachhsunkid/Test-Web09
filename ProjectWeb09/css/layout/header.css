@@ -1,0 +1,80 @@
+.header{
+    display: flex;
+    box-sizing: border-box;
+}
+.header__left{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    height: 56px;
+    background-color: #424242;
+}
+.header__sidebar{
+    background-image: url('../../assets/img/Sprites.64af8f61.svg');
+    background-position: -1157px -32px;
+    background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+}
+.header__logo{
+    margin-left: 16px;
+    height: 24px;
+    width: 24px;
+    background-image: url('../../favicon.ico');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.header__appname{
+    flex: 1;
+    padding-left: 6px;
+}
+.header__right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__menu{
+    background-image: url('../../assets/img/Sprites.64af8f61.svg');
+    background-position: -847px -35px;
+    background-repeat: no-repeat;
+	width: 16px;
+	height: 14px;
+    margin-left: 12px;
+}
+.user__ring{
+    background-image: url('../../assets/img/Sprites.64af8f61.svg');
+    background-position: -788px -30px;
+    background-repeat: no-repeat;
+	width: 22px;
+	height: 21px;
+    margin-right: 32px;
+
+}
+.user__avatar{
+    background-image: url('../../assets/img/Sprites.64af8f61.svg');
+    background-position: -620px -1152px;
+    background-repeat: no-repeat;
+	width: 40px;
+	height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.user__more{
+    background-image: url('../../assets/img/Sprites.64af8f61.svg');
+    background-position: -1078px -38px;
+    background-repeat: no-repeat;
+	width: 9px;
+	height: 6px;
+    margin-right: 24px;
+    margin-left: 12px;
+}
+.header__user{
+    display: flex;
+    align-items: center;
+}
+.header__company{
+    display: flex;
+    align-items: center;
+}

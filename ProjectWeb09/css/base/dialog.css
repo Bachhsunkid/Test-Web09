@@ -7,7 +7,7 @@
     background-color: rgba(51, 51, 51, 0.164);
     
 }
-.container{
+.dialog-container{
     min-width: 400px;
     padding: 32px 32px 0;
     position: fixed;
@@ -18,11 +18,6 @@
     border-radius: 4px;
     background-color: #fff;
     box-shadow: 0 3px 6px rgba(51, 51, 51, 0.363);
-}
-h2{
-    margin: 0;
-    font-size: 24px;
-
 }
 /* header */
 .dialog__header, .dialog__header__icon{

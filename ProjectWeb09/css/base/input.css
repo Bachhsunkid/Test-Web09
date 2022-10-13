@@ -15,14 +15,23 @@
 .input-400{
     width: 400px;
 }
+.input-320{
+    width: 320px;
+}
 .input:focus{
     border: 1px solid #019160;
 }
 .input-error{
     border: 1px solid #DE3618 !important;
 }
+.input-nomargin{
+    margin: 0;
+}
 .input__icon {
     padding-left: 40px;
+}
+.input__icon-right {
+    padding-right: 40px;
 }
 .input__icon-search {
     background-image: url(../../assets/img/search.png);

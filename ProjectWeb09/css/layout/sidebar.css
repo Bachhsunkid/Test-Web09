@@ -1,0 +1,35 @@
+.sidebar{
+    background-color: #424242;
+    position: relative;
+    padding-top: 5px;
+    top: -1px;
+}
+.sidebar__item{
+    display: flex;
+    align-items: center;
+    height: 36px;
+    width: 200px;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 16px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.sidebar__item:hover {
+    background-color: #757575;
+}
+.sidebar__item:active{
+    background-color: #707070;
+
+}
+.sidebar__icon{
+    margin-right: 12px;
+}
+.sidebar__icon-1{
+    background-image: url('../../assets/img/Sprites.64af8f61.svg');
+    background-position: -147px -202px;
+    background-repeat: no-repeat;
+	width: 19px;
+	height: 19px;
+}
