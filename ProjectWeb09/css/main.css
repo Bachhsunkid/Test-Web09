@@ -22,6 +22,8 @@ body {
     margin: 0;
 }
 
+
+
 @font-face {
     font-family: MISA Fonts;
     src: url(../assets/fonts/notosans-regular.2cb88a13.woff2);
@@ -36,9 +38,6 @@ body {
 @font-face {
     font-family: MISA FontsItalic;
     src: url(../assets/fonts/notosans-italic.1c1aaac9.woff2);
-}
-body{
-    
 }
 h2{
     margin: 0;

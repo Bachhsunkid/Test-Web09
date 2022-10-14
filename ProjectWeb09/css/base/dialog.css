@@ -5,7 +5,7 @@
     right: 0;
     bottom: 0;
     background-color: rgba(51, 51, 51, 0.164);
-    
+    z-index: 1000;
 }
 .dialog-container{
     min-width: 400px;
@@ -40,6 +40,14 @@
 .asterisk-red{
     color: #E60000;
 }
+.message{  /* 11:00 */
+    font-size: 11px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.message-error{
+    color: #E60000;
+}
 .dialog__body__part1{
     display: flex;
     margin-top: 8px;
@@ -63,7 +71,7 @@
     padding-left: 12px;
 }
 .col{
-    padding-right: 4px;
+    padding-right: 3px;
     flex: 1;
 }
 .col-40{
@@ -73,7 +81,7 @@
     flex-basis: 60%;
 }
 .col + .col{
-    padding-left: 4px;
+    padding-left: 3px;
     
 }
 .radio-button{
@@ -90,6 +98,9 @@
     padding: 20px 0;
     justify-content: space-between;
     border-top: 1px solid #E0E0E0;
+}
+.footer__right{
+    display: flex;
 }
 .header__icon .fas, .header__icon .far{
     font-size: 24px;

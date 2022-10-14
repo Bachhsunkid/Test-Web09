@@ -1,17 +1,24 @@
 .content{
-    width: 100%;
     background-color: #EEEEEE;
     padding: 24px;
+    width: 100%;
+}
+.content-container{
+    height: 100%;
+    
 }
 .content__header{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 12px;
+    margin-bottom: 12px;    
 }
 .content__main{
+    position: relative;
     background-color: #FFF;
-    padding: 24px;
+    height: calc(100% - 48px);
+    padding: 24px 24px 0 24px;
 }
+/* header */
 .content__feature{
     display: flex;
     align-items: center;
@@ -23,12 +30,70 @@
 	width: 22px;
 	height: 24px;
     margin-left: 12px;
-}
-tr th:last-child, tr td:last-child{
-    border-left: none;
-    border-right: none;
+    cursor: pointer;
 }
 
+
+/* table */
+.table-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 56px);
+}
+
+.content__table{
+    max-height: calc(100vh - 276px);
+    overflow-y: auto;
+    overflow-x: 1400px;
+    min-width: 1110px;
+}
+.content__table .feature{
+    text-align: center;
+    position: relative;
+}
+.content__table .feature span{
+    /* position: relative;
+    transform: translateX(-50%);
+    left: 10%; */
+    margin-right: 20px;    
+}
+.content__table .icon{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 25%;
+    cursor: pointer;
+}
+.content__table .icon-dropdown{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -371px -364px;
+	width: 10px;
+	height: 8px;
+    border: none;
+}
+.content__table .icon-dropdown:focus{
+    border: 1px solid #3395FF;
+}
+/* dropdown list */
+.dropdown-list{
+    position: absolute;
+    left: -20%;
+    top: 75%;
+    z-index: 9;
+    border: 1px solid #bbbbbb;
+    width: 120px;
+    background-color: #fff;
+}
+.dropdown-list__choose{
+    height: 36px;
+    line-height: 36px;
+}
+.dropdown-list__choose:hover{
+    background-color: #F5F5F5;
+    color: #50b83c;
+    cursor: pointer;
+}
+/* footer */
 .content__footer{
     display: flex;
     justify-content: space-between;

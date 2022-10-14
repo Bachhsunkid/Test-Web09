@@ -6,8 +6,6 @@
 .tooltiptext {
     position: absolute;
     visibility: hidden;
-    background-color: #DE3618;
-    color: #fff;
     text-align: center;
     border-radius: 4px;
     padding: 5px 10px;
@@ -16,8 +14,15 @@
     transform: translate(-112.5%,0);
     width: 80%;
   }
-  
-  .tooltip .tooltiptext::after {
+  .tooltiptext-normal{
+    background-color: #616161;
+    color: #fff;
+  }
+  .tooltiptext-error{
+    background-color: #DE3618;
+    color: #fff;
+  }
+  .tooltip .tooltiptext::after{
     content: "";
     position: absolute;
     top: 100%;
@@ -25,9 +30,16 @@
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
+  }
+  .tooltip .tooltiptext-normal::after {
+    border-color: #616161 transparent transparent  transparent ;
+  }
+  .tooltip .tooltiptext-error::after {
     border-color: #DE3618 transparent transparent  transparent ;
   }
   
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+
+  

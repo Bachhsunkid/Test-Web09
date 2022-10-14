@@ -39,3 +39,10 @@
     background-position-x: 16px;
     background-position-y: center;
 }
+
+.input__icon-search-right{
+    background-image: url(../../assets/img/search.png);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 16px);
+    background-position-y: center;
+}

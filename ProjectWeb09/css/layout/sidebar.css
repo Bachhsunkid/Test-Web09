@@ -15,21 +15,88 @@
     margin-bottom: 8px;
     margin-top: 8px;
 }
-
 .sidebar__item:hover {
     background-color: #757575;
 }
 .sidebar__item:active{
     background-color: #707070;
-
 }
+
 .sidebar__icon{
     margin-right: 12px;
 }
 .sidebar__icon-1{
-    background-image: url('../../assets/img/Sprites.64af8f61.svg');
-    background-position: -147px -202px;
-    background-repeat: no-repeat;
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -33px -1630px;
+	width: 18px;
+	height: 20px;
+}
+.sidebar__icon-2{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -78px -1631px;
+	width: 14px;
+	height: 18px;
+}
+.sidebar__icon-3{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -121px -1633px;
+	width: 16px;
+	height: 16px;
+}
+.sidebar__icon-4{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -165px -1632px;
+	width: 16px;
+	height: 18px;
+}
+.sidebar__icon-5{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -206px -1631px;
+	width: 20px;
+	height: 18px;
+}
+.sidebar__icon-6{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -254px -1632px;
+	width: 14px;
+	height: 17px;
+}
+.sidebar__icon-7{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -294px -1632px;
+	width: 18px;
+	height: 17px;
+}
+.sidebar__icon-8{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -339px -1633px;
+	width: 18px;
+	height: 17px;
+}
+.sidebar__icon-9{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -382px -1632px;
+	width: 17px;
+	height: 18px;
+}
+.sidebar__icon-10{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -427px -1634px;
+	width: 16px;
+	height: 16px;
+}
+.sidebar__icon-11{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -471px -1633px;
+	width: 17px;
+	height: 17px;
+}
+.sidebar__icon-12{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -514px -1632px;
+	width: 16px;
+	height: 18px;
+}
+.sidebar__icon-13{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -552px -1636px;
+	width: 14px;
+	height: 13px;
+}
+.sidebar__icon-14{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -592px -1631px;
+	width: 23px;
+	height: 18px;
+}
+.sidebar__icon-15{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -636px -1631px;
 	width: 19px;
-	height: 19px;
+	height: 18px;
 }

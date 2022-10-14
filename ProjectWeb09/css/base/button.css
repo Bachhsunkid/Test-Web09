@@ -10,15 +10,11 @@
     border-radius: 4px;
     cursor: pointer;
 }
-.btn + .btn{
-    margin-left: 20px;
+.btn-left24{
+    margin-left: 24px;
 }
-/* .btn i{
-    font-size: 20px;
-    position: relative;
-    top: 3.5px;
-    right: 4px;
-
+/* .btn + .btn{
+    margin-left: 20px;
 } */
 .btn__icon {
     padding-left: 36px;
@@ -60,3 +56,4 @@
     right: 24px;
     bottom: 24px;
 }
+
