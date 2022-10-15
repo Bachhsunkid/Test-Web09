@@ -6,7 +6,7 @@ tr {
     height: 48px;
     cursor: pointer;
 }
-th {
+th{
     text-align: left;
     padding: 14px 16px;
     background-color: #E0E0E0;
@@ -24,7 +24,6 @@ tr:hover td{
 }
 td {
     border-bottom: 1px solid #bbbbbb;
-    border-top: 1px solid #bbbbbb;
     border-right: 1px solid #bbbbbb;
     padding: 0 16px;
     font-size: 14px;
@@ -42,7 +41,7 @@ tbody{
 tbody tr th{
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 2;
 }
 tr th:last-child, tr td:last-child{
     border-right: none;

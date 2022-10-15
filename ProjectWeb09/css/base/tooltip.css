@@ -1,19 +1,20 @@
 .tooltip {
     position: relative;
-    display: inline-block;
-  }
+}
   
 .tooltiptext {
     position: absolute;
     visibility: hidden;
     text-align: center;
+    line-height: 13px;
     border-radius: 4px;
-    padding: 5px 10px;
     z-index: 1;
-    bottom: 110%;
-    transform: translate(-112.5%,0);
-    width: 80%;
-  }
+    font-size: 13px;
+    padding: 5px 10px;
+    bottom: 150%;
+    transform: translateX(-30%);
+
+}
   .tooltiptext-normal{
     background-color: #616161;
     color: #fff;
@@ -30,6 +31,7 @@
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
+    margin-top: -1px;
   }
   .tooltip .tooltiptext-normal::after {
     border-color: #616161 transparent transparent  transparent ;

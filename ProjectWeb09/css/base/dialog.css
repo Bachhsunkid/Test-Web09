@@ -40,10 +40,16 @@
 .asterisk-red{
     color: #E60000;
 }
+.col-container{
+    position: relative;
+}
 .message{  /* 11:00 */
-    font-size: 11px;
+    font-size: 10px;
     white-space: nowrap;
-    text-overflow: ellipsis;
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    /* text-overflow: ellipsis; */
 }
 .message-error{
     color: #E60000;

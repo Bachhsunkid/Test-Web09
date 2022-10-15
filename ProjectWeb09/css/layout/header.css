@@ -46,13 +46,17 @@
     margin-left: 12px;
 }
 .user__ring{
-    background-image: url('../../assets/img/Sprites.64af8f61.svg');
-    background-position: -788px -30px;
-    background-repeat: no-repeat;
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -257px -32px;
 	width: 22px;
-	height: 21px;
+	height: 25px;
     margin-right: 32px;
-
+}
+.user__ring:hover{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -788px -30px;
+	width: 22px;
+	height: 25px;
+    margin-right: 32px;
+    cursor: pointer;
 }
 .user__avatar{
     background-image: url('../../assets/img/Sprites.64af8f61.svg');

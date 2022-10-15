@@ -5,6 +5,7 @@
     right: 0;
     bottom: 0;
     background-color: rgba(51, 51, 51, 0.164);
+    z-index: 3;
 }
 .noti-container{
     min-width: 400px;
@@ -26,7 +27,7 @@
 }
 .noti__main{
     margin-bottom: 24px;
-    justify-content: space-between;
+   align-items: center;
 }
 .noti__icon{
     align-self: center;
@@ -34,15 +35,35 @@
     min-width: 40px;
 }
 .noti__icon-warning{
-    background-image: url('../../assets/img/Sprites.64af8f61.svg');
-    background-repeat: no-repeat;
-    background-position: -593px -145px;
-	width: 22px;
-	height: 23px;
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -598px -463px;
+	width: 36px;
+	height: 37px;
+}
+.noti__icon-error{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -752px -462px;
+	width: 36px;
+	height: 36px;
+}
+.noti__icon-confirm{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -832px -462px;
+	width: 36px;
+	height: 36px;
+}
+.noti__icon-information{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -672px -462px;
+	width: 36px;
+	height: 36px;
 }
 .noti__content{
-
+    padding-left: 16px;
+    flex: 1;
 }
 .noti__footer{
     border-top: 1px solid #E0E0E0;
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.noti__footer__right .btn + .btn{
+    margin-left: 8px;
 }
