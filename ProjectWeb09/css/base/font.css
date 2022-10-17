@@ -1,0 +1,23 @@
+@font-face {
+    font-family: MISA Fonts;
+    src: url(../../assets/fonts/notosans-regular.2cb88a13.woff2);
+}
+
+@font-face {
+    font-family: MISA FontsBold;
+    src: url(../../assets/fonts/notosans-bold.3ede5aff.woff2);
+}
+
+
+@font-face {
+    font-family: MISA FontsItalic;
+    src: url(../../assets/fonts/notosans-italic.1c1aaac9.woff2);
+}
+
+h2{
+    margin: 0;
+    font-size: 24px;
+}
+div{
+    font-size: 13px; 
+}

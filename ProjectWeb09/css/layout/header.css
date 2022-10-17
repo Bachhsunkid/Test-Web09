@@ -75,6 +75,8 @@
 	height: 6px;
     margin-right: 24px;
     margin-left: 12px;
+    cursor: pointer;
+    /* padding: 6px 8px; */
 }
 .header__user{
     display: flex;

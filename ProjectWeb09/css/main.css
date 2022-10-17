@@ -1,14 +1,15 @@
 @import url(../css/base/button.css);
 @import url(../css/base/combobox.css);
-@import url(../css/base/dialog.css);
-@import url(../css/base/icon.css);
 @import url(../css/base/input.css);
+@import url(../css/base/dialog.css);
+@import url(../css/base/tooltip.css);
+@import url(../css/base/icon.css);
 @import url(../css/base/popup.css);
 @import url(../css/base/table.css);
 @import url(../css/base/toast-message.css);
-@import url(../css/base/tooltip.css);
 @import url(../css/base/noti.css);
 @import url(../css/base/color.css);
+@import url(../css/base/font.css);
 
 @import url(../css/layout/container.css);
 @import url(../css/layout/header.css);
@@ -20,33 +21,6 @@
 body {
     font-family: MISA Fonts;
     margin: 0;
-}
-
-
-
-@font-face {
-    font-family: MISA Fonts;
-    src: url(../assets/fonts/notosans-regular.2cb88a13.woff2);
-}
-
-@font-face {
-    font-family: MISA FontsBold;
-    src: url(../assets/fonts/notosans-bold.3ede5aff.woff2);
-}
-
-
-@font-face {
-    font-family: MISA FontsItalic;
-    src: url(../assets/fonts/notosans-italic.1c1aaac9.woff2);
-}
-h2{
-    margin: 0;
-    font-size: 24px;
-
-}
-
-div{
-    font-size: 13px;
 }
 
 

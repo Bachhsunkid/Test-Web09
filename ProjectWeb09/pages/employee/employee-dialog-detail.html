@@ -1,0 +1,184 @@
+<!-- 
+    Created by: Trinh Xuan Bach 
+    Created time: 16/10/2022
+    Description: Trang from chi tiet thong tin nhan vien
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>Employee Detail</title>
+</head>
+<body>
+    <!-- =================Form Employee================= -->
+    <div class="dialog">
+        <div class="dialog-container">
+            <div class="dialog__header">
+                <div class="dialog__header__title">
+                    <h2>Thông tin nhân viên</h2>
+                </div>
+                <div class="dialog__header__checkbox">
+                    <div class="col">
+                        <div class="col__container">
+                            <input type="checkbox" name="type">
+                            <span for=""> Là khách hàng</span><br>
+                        </div>
+                    </div>
+                    <div class="col">
+                       <div class="col__container">
+                            <input type="checkbox" name="type">
+                            <span for=""> Là nhà cung cấp</span><br>
+                       </div>
+                    </div>
+                </div>
+                <div class="dialog__header__icon">
+                    <div class="header__icon header__icon-info"  title="Giúp (F1)">
+                        
+                    </div>
+                    <div class="header__icon header__icon-close" title="Đóng (ESC)">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="dialog__body">
+                <div class="dialog__body__part1">
+                    <div class="halfpart" id="halfpart1">
+                        <div class="part__rows">
+                            <div class="col col-40">
+                                <div class="col-container">
+                                    <div class="input-label">Mã <span class="asterisk-red">*</span></div>
+                                    <input type="text" class="input" placeholder="NV-1644">
+                                    <span class="message message-error">(*) Mã nhân viên không được để trống</span>
+                                </div>
+                            </div>
+                            <div class="col col-60">
+                                <div class="col-container">
+                                    <div class="input-label">Tên <span class="asterisk-red" >*</span></div>
+                                    <input type="text" class="input" placeholder="Nguyễn Ánh Bằng">
+                                    <span class="message message-error">(*) Tên không được để trống</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part__row">
+                            <div class="col">
+                                <div class="col-container">
+                                    <div class="input-label">Đơn vị <span class="asterisk-red">*</span></div>
+                                    <select type="text" class="combobox">
+                                        <option value="0" disabled selected><span class="option-disabled">- Không chọn -</span></option>
+                                        <option value="1">Trạng thái 1</option>
+                                        <option value="2">Trạng thái 2</option>
+                                        <option value="3">Trạng thái 3</option>
+                                    </select>
+                                    <span class="message message-error">(*) Đơn vị không được để trống</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part__row">
+                            <div class="col">
+                                <div class="input-label">Chức danh</div>
+                                <input type="text" class="input" placeholder="Lễ tân chính">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="halfpart">
+                        <div class="part__rows">
+                            <div class="col">
+                                <div class="input-label">Ngày sinh</div>
+                                <input type="date" class="input">
+                            </div>
+                            <div class="col">
+                                <div class="input-label">Giới tính</div>
+                                <div class="radio-button">
+                                    <input type="radio" name="gender">
+                                    <label for="">Nam</label><br>
+                                    <input type="radio" name="gender">
+                                    <label for="">Nữ</label><br>
+                                    <input type="radio" name="gender">
+                                    <label for="">Khác</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part__rows">
+                            <div class="col col-60">
+                                <div class="tooltip">
+                                    <div class="input-label">Số CMND</div>
+                                    <span class="tooltiptext tooltiptext-normal">Số chứng minh nhân dân</span>
+                                </div>
+                                <input type="text" class="input" placeholder="033202003123">
+                            </div>
+                            <div class="col col-40">
+                                <div class="input-label">Ngày cấp</div>
+                                <input type="date" class="input" >
+                            </div>
+                        </div>
+                        <div class="part__row">
+                            <div class="col">
+                                <div class="input-label">Nơi cấp</div>
+                                <input type="text" class="input" placeholder="Hà Nội">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dialog__body__part2">
+                    <div class="part__row">
+                        <div class="col">
+                            <div class="input-label">Địa chỉ</div>
+                            <input type="text" class="input" placeholder="123 Phạm Văn Chiểu">
+                        </div>
+                    </div>
+                    <div class="w-75">
+                        <div class="part__rows">
+                            <div class="col">
+                                <div class="tooltip">
+                                    <div class="input-label">ĐT di động</div>
+                                    <span class="tooltiptext tooltiptext-normal">Điện thoại di động</span>
+                                </div>
+                                <input type="text" class="input" placeholder="033613123">
+                            </div>
+                            <div class="col">
+                                <div class="tooltip">
+                                    <div class="input-label">ĐT cố định</div>
+                                    <span class="tooltiptext tooltiptext-normal">Điện thoại cố định</span>
+                                </div>
+                               
+                                <input type="text" class="input" placeholder="(764) 749-6478">
+                            </div>
+                            <div class="col">
+                                <div class="input-label">Email</div>
+                                <input type="text" class="input" placeholder="procuon234@example.com">
+                            </div>
+                        </div>
+                        <div class="part__rows">
+                            <div class="col">
+                                <div class="input-label">Tài khoản ngân hàng</div>
+                                <input type="text" class="input" placeholder="39752384">
+                            </div>
+                            <div class="col">
+                                <div class="input-label">Tên ngân hàng</div>
+                                <input type="text" class="input" placeholder="MB Bank">
+                            </div>
+                            <div class="col">
+                                <div class="input-label">Chi nhánh</div >
+                                <input type="text" class="input" placeholder="Chi nhánh 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog__footer">
+                <div class="footer__right" style="order:2;">
+                    <button class="btn btn-white" style="order:1;">Cất</button>
+                    <button class="btn btn-green btn-left24" style="order:2;">Cất và thêm</button>
+                </div>   
+                <div class="footer__left" style="order:1;">
+                    <button class="btn btn-white">Hủy</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

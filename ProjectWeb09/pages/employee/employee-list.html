@@ -1,17 +1,22 @@
+<!-- 
+    Created by: Trinh Xuan Bach 
+    Created time: 16/10/2022
+    Description: Trang danh sách nhân viên 
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../../css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <script src="js/main.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" /> -->
     <title>AMIS Kế Toán</title>
 </head>
 <body>
     <div class="container">
+        <!-- =================Header================= -->
         <div class="header">
             <div class="header__left">
                 <div class="header__sidebar"></div>
@@ -34,69 +39,102 @@
                 </div>
             </div>
         </div>
+        <!-- =================Main================= -->
         <div class="main">
+            <!-- =================Side Bar================= -->
             <div class="sidebar">
                 <div class="sidebar__item">
-                    <div class="sidebar__icon sidebar__icon-1"></div>
-                    <div class="sidebar__title font-light">Tổng quan</div>
+                    <div class="item__container">
+                        <div class="sidebar__icon sidebar__icon-1"></div>
+                        <div class="sidebar__title font-light">Tổng quan</div>
+                    </div>
                 </div>
                 <div class="sidebar__item">
-                    <div class="sidebar__icon sidebar__icon-2"></div>
-                    <div class="sidebar__title font-light">Tiền mặt</div>
+                    <div class="item__container">
+                        <div class="sidebar__icon sidebar__icon-2"></div>
+                        <div class="sidebar__title font-light">Tiền mặt</div>
+                    </div>
                 </div>
                 <div class="sidebar__item">
-                    <div class="sidebar__icon sidebar__icon-3"></div>
-                    <div class="sidebar__title font-light">Tiền gửi</div>
+                    <div class="item__container">
+                        <div class="sidebar__icon sidebar__icon-3"></div>
+                        <div class="sidebar__title font-light">Tiền gửi</div>
+                    </div>
                 </div>
                 <div class="sidebar__item">
-                    <div class="sidebar__icon sidebar__icon-4"></div>
-                    <div class="sidebar__title font-light">Mua hàng</div>
+                    <div class="item__container">
+                        <div class="sidebar__icon sidebar__icon-4"></div>
+                        <div class="sidebar__title font-light">Mua hàng</div>
+                    </div>
                 </div>
                 <div class="sidebar__item">
-                    <div class="sidebar__icon sidebar__icon-5"></div>
-                    <div class="sidebar__title font-light">Bán hàng</div>
+                    <div class="item__container">
+                        <div class="sidebar__icon sidebar__icon-5"></div>
+                        <div class="sidebar__title font-light">Bán hàng</div>
+                    </div>
                 </div>
                 <div class="sidebar__item">
-                    <div class="sidebar__icon sidebar__icon-6"></div>
-                    <div class="sidebar__title font-light">Quản lý hóa đơn</div>
+                    <div class="item__container">
+                        <div class="sidebar__icon sidebar__icon-6"></div>
+                        <div class="sidebar__title font-light">Quản lý hóa đơn</div>
+                    </div>
                 </div>
                 <div class="sidebar__item">
-                    <div class="sidebar__icon sidebar__icon-7"></div>
+                    <div class="item__container">
+                        <div class="sidebar__icon sidebar__icon-7"></div>
                     <div class="sidebar__title font-light">Kho</div>
+                    </div>
                 </div>
                 <div class="sidebar__item">
-                    <div class="sidebar__icon sidebar__icon-8"></div>
-                    <div class="sidebar__title font-light">Công cụ dụng cụ</div>
+                    <div class="item__container">
+                        <div class="sidebar__icon sidebar__icon-8"></div>
+                        <div class="sidebar__title font-light">Công cụ dụng cụ</div>
+                    </div>     
                 </div>
                 <div class="sidebar__item">
-                    <div class="sidebar__icon sidebar__icon-9"></div>
-                    <div class="sidebar__title font-light">Tài sản cố định</div>
+                    <div class="item__container">
+                        <div class="sidebar__icon sidebar__icon-9"></div>
+                        <div class="sidebar__title font-light">Tài sản cố định</div>
+                    </div>
                 </div>
                 <div class="sidebar__item">
-                    <div class="sidebar__icon sidebar__icon-10"></div>
-                    <div class="sidebar__title font-light">Thuế</div>
+                    <div class="item__container">
+                        <div class="sidebar__icon sidebar__icon-10"></div>
+                        <div class="sidebar__title font-light">Thuế</div>
+                    </div>
+                    </div>
+                <div class="sidebar__item">
+                    <div class="item__container">
+                        <div class="sidebar__icon sidebar__icon-11"></div>
+                        <div class="sidebar__title font-light">Giá thành</div>
+                    </div>
                 </div>
                 <div class="sidebar__item">
-                    <div class="sidebar__icon sidebar__icon-11"></div>
-                    <div class="sidebar__title font-light">Giá thành</div>
+                    <div class="item__container">
+                        <div class="sidebar__icon sidebar__icon-12"></div>
+                        <div class="sidebar__title font-light">Tổng hợp</div>
+                    </div>
                 </div>
                 <div class="sidebar__item">
-                    <div class="sidebar__icon sidebar__icon-12"></div>
-                    <div class="sidebar__title font-light">Tổng hợp</div>
+                    <div class="item__container">
+                        <div class="sidebar__icon sidebar__icon-13"></div>
+                        <div class="sidebar__title font-light">Ngân sách</div>
+                    </div>
                 </div>
                 <div class="sidebar__item">
-                    <div class="sidebar__icon sidebar__icon-13"></div>
-                    <div class="sidebar__title font-light">Ngân sách</div>
+                    <div class="item__container">
+                        <div class="sidebar__icon sidebar__icon-14"></div>
+                        <div class="sidebar__title font-light">Báo cáo</div>
+                    </div>
                 </div>
                 <div class="sidebar__item">
-                    <div class="sidebar__icon sidebar__icon-14"></div>
-                    <div class="sidebar__title font-light">Báo cáo</div>
-                </div>
-                <div class="sidebar__item">
-                    <div class="sidebar__icon sidebar__icon-15"></div>
-                    <div class="sidebar__title font-light">Phân tích tài chính</div>
+                    <div class="item__container">
+                        <div class="sidebar__icon sidebar__icon-15"></div>
+                        <div class="sidebar__title font-light">Phân tích tài chính</div>
+                    </div>
                 </div>
             </div>
+            <!-- =================Content================= -->
             <div class="content">
                 <div class="content-container">
                     <div class="content__header">
@@ -110,19 +148,20 @@
                         </div>
                         <div class="table-footer">
                             <div class="content__table">
+                                <!-- =================Table================= -->
                                 <table>
                                     <tr>
                                         <th class="th-center"><input type="checkbox"></th>
                                         <th>MÃ NHÂN VIÊN</th>
                                         <th>TÊN NHÂN VIÊN</th>
                                         <th>GIỚI TÍNH</th>
-                                        <th>NGÀY SINH</th>
+                                        <th class="th-center">NGÀY SINH</th>
                                         <th title="Số chứng minh nhân dân">SỐ CMND</th>
                                         <th>CHỨC DANH</th>
                                         <th>TÊN ĐƠN VỊ</th>
                                         <th>SỐ TÀI KHOẢN</th>
-                                        <th title="Chi nhánh tài khoản ngân hàng">NGÂN HÀNG</th>
-                                        <th>CHI NHÁNH TK NGÂN HÀNG</th>
+                                        <th >NGÂN HÀNG</th>
+                                        <th title="Chi nhánh tài khoản ngân hàng">CHI NHÁNH TK NGÂN HÀNG</th>
                                         <th>CHỨC NĂNG</th>
                                     </tr>
                                     <tr>
@@ -520,6 +559,7 @@
                                     </tr>
                                 </table>
                             </div>  
+                            <!-- =================Pagging================= -->
                             <div class="footer">
                                 <div class="content__footer">
                                     <div class="content__footer__left">
@@ -527,10 +567,6 @@
                                     </div>
                                     <div class="content__footer__right">
                                         <div class="pagging__choose">
-
-                                            
-                                            
-
                                             <select type="text" class="combobox combobox-nomargin">
                                                 <option value="1">10 bản ghi trên 1 trang</option>
                                                 <option value="2">20 bản ghi trên 1 trang</option>
@@ -560,7 +596,7 @@
             </div>
         </div>
     </div>
-
+    <!-- =================Form Employee================= -->
     <div class="dialog" hidden>
         <div class="dialog-container">
             <div class="dialog__header">
@@ -569,20 +605,24 @@
                 </div>
                 <div class="dialog__header__checkbox">
                     <div class="col">
-                        <input type="checkbox" name="type">
-                        <label for=""> Là khách hàng</label><br>
+                        <div class="col__container">
+                            <input type="checkbox" name="type">
+                            <span for=""> Là khách hàng</span><br>
+                        </div>
                     </div>
                     <div class="col">
-                        <input type="checkbox" name="type">
-                        <label for=""> Là nhà cung cấp</label><br>
+                       <div class="col__container">
+                            <input type="checkbox" name="type">
+                            <span for=""> Là nhà cung cấp</span><br>
+                       </div>
                     </div>
                 </div>
                 <div class="dialog__header__icon">
-                    <div class="header__icon header__icon-info">
-                        <i class="far fa-question-circle"></i>
+                    <div class="header__icon header__icon-info"  title="Giúp (F1)">
+                        
                     </div>
-                    <div class="header__icon header__icon-close">
-                        <i class="fas fa-times"></i>
+                    <div class="header__icon header__icon-close" title="Đóng (ESC)">
+                        
                     </div>
                 </div>
             </div>
@@ -713,8 +753,8 @@
             </div>
             <div class="dialog__footer">
                 <div class="footer__right" style="order:2;">
-                    <button class="btn btn-green btn-left24" style="order:2;">Cất và thêm</button>
                     <button class="btn btn-white" style="order:1;">Cất</button>
+                    <button class="btn btn-green btn-left24" style="order:2;">Cất và thêm</button>
                 </div>   
                 <div class="footer__left" style="order:1;">
                     <button class="btn btn-white">Hủy</button>
@@ -723,7 +763,7 @@
             </div>
         </div>
     </div>
-
+<!-- =================Popup Warning================= -->
     <div class="noti" hidden>
         <div class="noti-container">
             <div class="noti__main">
@@ -737,7 +777,7 @@
             </div>
         </div>
     </div>
-
+<!-- =================Popup Erorr================= -->
     <div class="noti" hidden>
         <div class="noti-container">
             <div class="noti__main">
@@ -751,7 +791,7 @@
             </div>
         </div>
     </div>
-
+<!-- =================Popup Confirm ================= -->
     <div class="noti" hidden>
         <div class="noti-container">
             <div class="noti__main">
@@ -771,6 +811,11 @@
             </div>
         </div>
     </div>
+    <!-- nhúng các thư viện -->
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <!-- Nhúng các js dùng chung -->
 
+    <!-- Nhúng các js sử dụng riêng cho trang -->
+    <!-- <script src="../../js/pages/main.js"></script> -->
 </body>
 </html>

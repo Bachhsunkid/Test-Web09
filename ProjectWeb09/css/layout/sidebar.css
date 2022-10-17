@@ -4,27 +4,29 @@
     padding-top: 5px;
     top: -1px;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 .sidebar__item{
+    height: 44px;
+    width: 200px;
+    padding: 0 12px;
+}
+.item__container{
     display: flex;
     align-items: center;
-    height: 36px;
-    width: 200px;
     cursor: pointer;
     font-size: 14px;
-    padding-left: 16px;
-    margin-bottom: 8px;
-    margin-top: 8px;
+    padding-top: 14px;
+    padding-bottom: 13px;
 }
-.sidebar__item:hover {
+.item__container:hover {
     background-color: #757575;
 }
-.sidebar__item:active{
+.item__container:active{
     background-color: #707070;
 }
-
 .sidebar__icon{
-    margin-right: 12px;
+    margin: 0 12px;
 }
 .sidebar__icon-1{
     background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -33px -1630px;
