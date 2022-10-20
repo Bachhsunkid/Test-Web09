@@ -1,6 +1,6 @@
 .content{
     background-color: #EEEEEE;
-    padding: 24px;
+    padding: 24px 12px 12px 12px;
     width: calc(100% - 200px);
 }
 .content-container{
@@ -55,12 +55,12 @@
 .content__table{
     width: 100%;
     max-height: calc(100vh - 276px);
-    overflow-y: auto;
-    
+    overflow: auto;
 }
 .content__table .feature{
     text-align: center;
-    position: relative;
+    /* z-index: 2; */
+    /* position: relative; */
 }
 .content__table .feature span{
     margin-right: 20px;    
@@ -89,6 +89,9 @@
     border: 1px solid #3395FF;
 }
 /* dropdown list */
+.dropdown{
+
+}
 .dropdown-list{
     position: absolute;
     right: 20%;
@@ -96,13 +99,14 @@
     border: 1px solid #bbbbbb;
     width: 120px;
     background-color: #fff;
-    z-index: 1;
+    
 }
 .dropdown-list__choose{
     height: 36px;
     line-height: 36px;
     text-align: left;
     padding: 0 14px;
+    
 }
 .dropdown-list__choose:hover{
     background-color: #F5F5F5;
@@ -110,25 +114,21 @@
     cursor: pointer;
 }
 /* footer */
+
 .content__footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 48px;
 }
 .content__footer__right{
     display: flex;
     align-items: center;
+
 }
-ul {
-    list-style-type: none;
-    display: flex;
+.pagging__recordnum{
+    padding: 16px;
 }
-.page__numbers{
-    padding: 0 7px;
-}
-.page__btn{
-    margin: 0 15px;
-}
-.page__numbers-active{
-    border: 1px solid #bbbbbb;
+.pagging__direct .icon__btn{
+    padding-right: 16px;
 }

@@ -3,7 +3,24 @@
     background-repeat: no-repeat;
     align-self: center;
 }
-
+.icon__btn{
+    width: 24px;
+    height: 24px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+.icon-previous{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -36px -361px;
+	width: 8px;
+	height: 14px;
+}
+.icon-next{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -84px -361px;
+	width: 8px;
+	height: 14px;
+}
 .icon-error{
     background-image: url(../../assets/img/search.png);
 }

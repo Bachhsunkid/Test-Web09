@@ -19,9 +19,9 @@
 }
 .header__logo{
     margin-left: 16px;
-    height: 24px;
-    width: 24px;
-    background-image: url('../../favicon.ico');
+    width: 114px;
+    height: 36px;
+    background-image: url('../../assets/img/Logo_Module_TiengViet_White.66947422.svg');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -60,10 +60,10 @@
 }
 .user__avatar{
     background-image: url('../../assets/img/Sprites.64af8f61.svg');
-    background-position: -620px -1152px;
+    background-position: -352px -894px;
     background-repeat: no-repeat;
-	width: 40px;
-	height: 40px;
+	width: 32px;
+	height: 32px;
     border-radius: 50%;
     margin-right: 8px;
 }
@@ -77,6 +77,9 @@
     margin-left: 12px;
     cursor: pointer;
     /* padding: 6px 8px; */
+}
+.user__name{
+    cursor: pointer;
 }
 .header__user{
     display: flex;
