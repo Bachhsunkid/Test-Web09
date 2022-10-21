@@ -607,7 +607,7 @@
                             <div class="col col-40">
                                 <div class="col-container">
                                     <div class="input-label">Mã <span class="asterisk-red">*</span></div>
-                                    <input employeeId type="text" class="input" placeholder="NV-1644" id="inputFocus">
+                                    <input employeeId type="text" class="input" placeholder="NV-1644">
                                     <span hidden class="message message-error">(*) Mã nhân viên không được để trống</span>
                                 </div>
                             </div>
@@ -703,9 +703,10 @@
                                
                                 <input type="text" class="input" placeholder="(764) 749-6478">
                             </div>
-                            <div class="col">
+                            <div class="col col-container">
                                 <div class="input-label">Email</div>
-                                <input type="text" class="input" placeholder="procuon234@example.com">
+                                <input type="text" employeeEmail class="input" placeholder="procuon234@example.com">
+                                <span hidden class="message message-error">(*) Email sai định dạng</span>
                             </div>
                         </div>
                         <div class="part__rows">

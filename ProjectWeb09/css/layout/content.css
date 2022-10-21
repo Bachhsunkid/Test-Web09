@@ -22,7 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin: -6px -6px 24px 0;
+    margin: -6px -6px 20px 0;
 }
 .content__feature input:hover{
     outline: 1px solid #E0E0E0;
@@ -56,11 +56,6 @@
     width: 100%;
     max-height: calc(100vh - 276px);
     overflow: auto;
-}
-.content__table .feature{
-    text-align: center;
-    /* z-index: 2; */
-    /* position: relative; */
 }
 .content__table .feature span{
     margin-right: 20px;    

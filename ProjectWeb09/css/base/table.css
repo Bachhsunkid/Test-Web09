@@ -63,12 +63,13 @@ tbody tr th{
 .tblid__sticky-left{
     position: sticky;
     left: 48px;
-    width: 145px;
+    width: 120px;
+    padding-left: 0;
     /* z-index: 5; */
 }
 .tblname__sticky-left{
     position: sticky;
-    left: 193px;
+    left: 168px;
     min-width: 180px;
     /* z-index: 5; */
 }
