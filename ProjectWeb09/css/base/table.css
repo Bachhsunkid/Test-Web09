@@ -43,38 +43,38 @@ td {
 tbody{
     position: relative;
 }
-tbody tr th{
+table thead{
     position: sticky;
     top: 0;
     z-index: 3;
 }
-.row-selected{
-    background-color: #E0E0E0;
-}
 .th-z5{
     z-index: 5;
+}
+.th-z2{
+    z-index: 2;
 }
 .tblcb__sticky-left{
     position: sticky;
     left: 0;
     width: 48px;
-    /* z-index: 5; */
 }
 .tblid__sticky-left{
     position: sticky;
     left: 48px;
     width: 120px;
     padding-left: 0;
-    /* z-index: 5; */
 }
 .tblname__sticky-left{
     position: sticky;
     left: 168px;
-    min-width: 180px;
-    /* z-index: 5; */
+    /* min-width: 180px; */
 }
 .tblfeature__sticky-right{
     position: sticky;
-    right: 0;
-    /* z-index: 5; */
+    right: 0px;
+    width: 120px;
+}
+.row-selected{
+    background-color: #E0E0E0;
 }

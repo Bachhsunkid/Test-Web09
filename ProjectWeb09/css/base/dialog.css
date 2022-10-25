@@ -30,13 +30,13 @@
 .dialog__header__checkbox .col{
     margin-left: 10px;
     display: inline-block;
-    
 }
 .col__container{
     display: flex;
 }
 .col__container span{
     margin-left: 6px;
+    line-height: 25px;
 }
 .dialog__header__icon{
     position: absolute;
@@ -115,6 +115,14 @@
 .radio-button{
     display: flex;
     margin-top: 14px;
+}
+.radio-button span{
+    margin-left: 6px;
+    margin-right: 16px;
+    line-height: 25px;
+}
+.margin__left-24{
+    margin-left: 24px;
 }
 .w-75{
     width: 74%;

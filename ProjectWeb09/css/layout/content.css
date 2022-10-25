@@ -1,6 +1,6 @@
 .content{
     background-color: #EEEEEE;
-    padding: 24px 12px 12px 12px;
+    padding: 24px 20px 20px;
     width: calc(100% - 200px);
 }
 .content-container{
@@ -58,35 +58,33 @@
     overflow: auto;
 }
 .content__table .feature span{
-    margin-right: 20px;    
+    margin-right: 12px;    
     font-weight: 600;
     color: #3395FF;
+    margin-left: -20px;
 }
 .content__table .icon{
     position: absolute;
     transform: translate(50%,-50%);
     top: 50%;
-    right: 25%;
+    right: 35%;
     cursor: pointer;
     background-color: transparent;
     border: none;
 }
 .content__table .icon-dropdown{
-    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -371px -364px;
-	width: 10px;
-	height: 8px;
-    border: none;
-    padding: 7px 5px;
-    transform: translateY(4px);
-    
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -900px -365px;
+	width: 8px;
+	height: 5px;
+    border: none;    
+}
+button.icon{
+    padding:  5px 8px;
 }
 .icon:focus{
     border: 1px solid #3395FF;
 }
 /* dropdown list */
-.dropdown{
-
-}
 .dropdown-list{
     position: absolute;
     right: 20%;
@@ -94,7 +92,6 @@
     border: 1px solid #bbbbbb;
     width: 120px;
     background-color: #fff;
-    
 }
 .dropdown-list__choose{
     height: 36px;

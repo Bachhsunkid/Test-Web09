@@ -1,182 +1,20 @@
 $(document).ready(function() {
     // Load dữ liệu:
     loadData();
-    // gán các sự kiện cho các element:
+
+    //gán sự kiện validate form
     validateData();
+
+    // gán các sự kiện cho các element:
     initEvents();
+
 })
 
-var employeeId = null;
-var formMode = "add";
-
-$(window).keypress(function(event) {
-    if (!(event.which == 115 && event.ctrlKey) && !(event.which == 19)) return true;
-    alert("Ctrl-S pressed");
-    event.preventDefault();
-    return false;
-});
-
-function initEvents() {
-    $(document).on('keydown', function(e) {
-        if (e.keyCode == 27)
-        $("#dialogId").hide();
-      });
-    $(window).keypress(function(event) {
-        if (event.which == 119 && event.ctrlKey){
-            $("#btnAdd").click(function (e) { 
-                saveData();
-            });
-          return false;
-        }
-      });
-    //in dam dong duoc chon trong table
-    //Trinh Xuan Bach 22/10/2022
-    $("table tbody tr").click(function () { 
-        // Xóa tất cả các trạng thái được chọn của các dòng dữ liệu khác:
-        $(this).siblings().removeClass('row-selected');
-        // In đậm dòng được chọn:
-        // this.classList.add("row-selected");
-        employeeId = $(this).data('id');
-        // console.log(employeeId);
-    });
-
-    //Hiển thị form nhân viên
-    $("#addEmployee").click(function () { 
-        formMode = "add";
-        //Loai bo cac error truoc do 
-        $(".input, select").removeClass("input-error");
-        $(".input, select").next().hide();
-        //Xoa du lieu trong input
-        $("input[employeeEmail]").val("");
-        //Hiển thị form
-        $("#dialogId").show();
-        //focus ô đầu tiên
-        $("input[employeeID]").focus();
-    });
-    //dong dialog
-    $("#btnClose").click(function(){
-        $("#dialogId").hide();
-    });
-    
-    //khi click vao nut thu nho thi thu nho sidebar
-    //Trinh Xuan Bach 22/10/2022
-    $(".header__menu").click(function(){
-        $(".sidebar").addClass("sidebar-mini");
-        $(".sidebar__title").addClass("sidebar__title-mini");
-        $(".sidebar__item").addClass("sidebar__item-mini");
-        $(".item__container").addClass("item__container-mini");
-        $(".sidebar__title").addClass("sidebar__title-mini");
-        $(".header__left").addClass("header__left-mini");
-        $(".header__logo").addClass("header__logo-mini");
-        $(".header__sidebar").addClass("header__sidebar-mini");
-        $(".header__right").addClass("header__right-mini");
-        $(".content").addClass("content-mini");
-        $(".header__menu").hide();
-        $(".header__menu-mini").show();
-    });
-    //khi click vao nut mo rong thi mo rong sidebar
-    //Trinh Xuan Bach 22/10/2022
-    $(".header__menu-mini").click(function (e) { 
-        $(".sidebar").removeClass("sidebar-mini");
-        $(".sidebar__title").removeClass("sidebar__title-mini");
-        $(".sidebar__item").removeClass("sidebar__item-mini");
-        $(".item__container").removeClass("item__container-mini");
-        $(".sidebar__title").removeClass("sidebar__title-mini");
-        $(".header__left").removeClass("header__left-mini");
-        $(".header__logo").removeClass("header__logo-mini");
-        $(".header__sidebar").removeClass("header__sidebar-mini");
-        $(".header__right").removeClass("header__right-mini");
-        $(".content").removeClass("content-mini");
-        $(".header__menu").show();
-        $(".header__menu-mini").hide();
-    });
-    //button chuc nang
-    $("button.icon").click(function(e){
-        //an cac button cu
-        //hien thi droplist
-        try{
-            $(this).parent().parent().css("z-index","0");
-            $(this).next().toggle();
-            $(this).parent().parent().css("z-index","2");
-            e.stopPropagation();
-        }catch(ex){
-            console.log(ex);
-        }
-        finally{
-            // $(this).parent().parent().css("z-index","0");
-        }
-    });
-    /**
-     * Đóng các element khi click out
-     * Trịnh xuân bách - 22/10/2022
-     */
-    $("body").click(function(e){
-        $("button.icon").parent().parent().css("z-index","0");
-        $(".dropdown-list").hide();
-    });
-    /**
-     * Nút sửa thông tin nhân viên
-     * Trịnh xuân bách - 22/10/2022
-     */
-    $("#btnAdd").click(function (e) { 
-        saveData();
-    });
-
-    $(".feature span").click(function (e) { 
-        formMode = "edit";
-        saveData();
-    });
-    /**
-     * binding dữ liệu khi double click vào 1 bản ghi
-     * Trịnh xuân bách - 23/10/2022
-     */
-    $(document).on('dblclick', 'table tbody tr', function() {
-        formMode = "edit";
-         //Loai bo cac error truoc do 
-         $(".input, select").removeClass("input-error");
-         $(".input, select").next().hide();
-         //Xoa du lieu trong input
-         $("input[employeeEmail]").val("");
-        // Hiển thị form:
-        $("#dialogId").show();
-        // Focus vào ô input đầu tiên:
-        $("#dialogId")[0].focus();
-
-        // Binding dữ liệu tương ứng với bản ghi vừa chọn:
-        let data = $(this).data('entity');
-        employeeId = $(this).data('id');
-        
-        console.log(employeeId)
-        // Duyệt tất cả các input:
-        let inputs = $("#dialogId input[type=radio], #dialogId input[type=date], #dialogId input[type=text], #dialogId select");
-        for (const input of inputs) {
-            // Đọc thông tin propValue và gán lên dialog:
-            const propValue = $(input).attr("propValue");
-            let value = data[propValue];
-            //Xu li binding gioi tinh
-
-            //Xu li binding cho datetime
-            // console.log(input.type);
-            if(input.type == "date"){
-                value = formatDate(value);
-                input.value = value;
-            }
-            // console.log(propValue);
-            else{
-                input.value = value;
-            }
-        }
-    });
-
-
-    $(".openPopup").on("click", function() {
-        $('#output').text($('#output').text()+'Clicked! ');
-    });
-}
-
+var employeeId = null; //lưu trữ id uiid nhân viên
+var formMode = "add";   //đánh dấu loại form
 
 /**
- * Lấy dữ liệu từ API rồi fill vào table
+ * Gọi API thêm dữ liệu
  * Trịnh Xuân Bách - 22/10/2022
  */
 function loadData(){
@@ -240,7 +78,7 @@ function loadData(){
                                             <div class="icon-dropdown "></div>
                                         </button>
                                         <div class="dropdown-list" hidden >
-                                            <div class="dropdown-list__choose" >
+                                            <div class="dropdown-list__choose" id="btnDelete" >
                                                 Xóa
                                             </div>
                                             <div class="dropdown-list__choose">
@@ -271,29 +109,29 @@ function loadData(){
         console.log(error);
     }
 }
-
 /**
- * Gọi API thêm dữ liệu
+ * Lưu data từ form vào DB
  * Trịnh Xuân Bách - 22/10/2022
  */
-function saveData() {
-    console.log(formMode);
+ function saveData() {
+    console.log(employeeId);
     // Thu thập dữ liệu:
-    let inputs = $("#dialogId input[type=radio], #dialogId input[type=date], #dialogId input[type=text], #dialogId select");
-    //tạo đối tượng employee để lưu trữ thông tin
+    let inputs = $("#dialogId input[type=date], #dialogId input[type=radio], #dialogId input[type=text], #dialogId select"); //#dialogId input[type=radio], 
     var employee = {};
     // build object:
     for (const input of inputs) {
         // Đọc thông tin propValue:
         const propValue = $(input).attr("propValue");
         // Lấy ra value:
-        if (propValue) {
+        if(propValue === "EmployeeDepartment"){
+            value = "142cb08f-7c31-21fa-8e90-67245e8b283e";
+            employee[propValue] = value;
+        }
+        else{
             let value = input.value;
             employee[propValue] = value;
         }
     }
-    console.log(employeeId);
-    console.log(employee);
     // Gọi api thực hiện cất dữ liệu:
     if (formMode == "edit") {
         $.ajax({
@@ -307,7 +145,7 @@ function saveData() {
                 // load lại dữ liệu:
                 loadData();
                 // Ẩn form chi tiết:
-                $("#dialogId").hide();
+                $("#dlgEmployeeDetail").hide();
             }
         });
     } else {
@@ -322,22 +160,204 @@ function saveData() {
                 // load lại dữ liệu:
                 loadData();
                 // Ẩn form chi tiết:
-                $("#dialogId").hide();
-            }
+                $("#dlgEmployeeDetail").hide();
+            } 
         });
     }
 }
 
-/**
- * Thực hiện validate dữ liệu
- * Author: Trinh Xuan Bach - 18/10/2022
- */
+
+function initEvents(){
+    /**
+     * Lấy id nhân viên khi chọn dòng
+     * Trịnh Xuân Bách - 22/10/2022
+     */
+    $(document).on('click', 'table tbody tr', function() {
+        // Xóa tất cả các trạng thái được chọn của các dòng dữ liệu khác:
+        // $(this).siblings().children().removeClass('row-selected');
+        // In đậm dòng được chọn:
+        // $(this).children().addClass('row-selected');
+        employeeId = $(this).data('id');
+        console.log(employeeId);
+    });
+
+     /**
+     * Gán sự kiện mở form cho button thêm mới nhân viên
+     * Trịnh Xuân Bách - 22/10/2022
+     */
+    $("#addNewEmployee").click(function() {
+        formMode = "add";
+        //Loai bo cac error truoc do 
+        $(".input, select").removeClass("input-error");
+        $(".input, select").next().hide();
+        //Xoa du lieu trong input
+        $("input").val("");
+        // Hiển thị form
+        $("#dialogId").show();
+        // Focus vào ô nhập liệu đầu tiên:
+        $('#dialogId input[type=text]')[0].focus();
+    })
+    /**
+     * Gán sự kiện đóng form cho button thêm mới nhân viên
+     * Trịnh Xuân Bách - 22/10/2022
+     */
+    $("#btnClose").click(function() {
+        // Ẩn dialog
+        $(this).parents(".dialog").hide();
+    })
+    /**
+     * Gán sự kiện cất dữ liệu cho button cất
+     * Trịnh Xuân Bách - 22/10/2022
+     */
+    $("#btnSave").click(saveData);
+
+    /**
+     * binding dữ liệu khi double click vào 1 bản ghi
+     * Trịnh xuân bách - 23/10/2022
+     */
+     $(document).on('dblclick', 'table tbody tr', function() {
+        formMode = "edit";
+        // Hiển thị form:
+        $("#dialogId").show();
+        // Focus vào ô input đầu tiên:
+        $("#dialogId input[type=text]")[0].focus();
+
+        // Binding dữ liệu tương ứng với bản ghi vừa chọn:
+        let data = $(this).data('entity');
+        employeeId = $(this).data('id');
+        
+        console.log(employeeId)
+        // Duyệt tất cả các input:
+        let inputs = $("#dialogId input[type=date], #dialogId input[type=text], #dialogId select");//#dialogId input[type=radio], 
+        for (const input of inputs) {
+            // Đọc thông tin propValue và gán lên dialog:
+            const propValue = $(input).attr("propValue");
+            console.log(propValue);
+            if (propValue) {
+                let value = data[propValue];
+                input.value = value;
+            }
+        }
+    });
+
+    //khi click vao nut thu nho thi thu nho sidebar
+    //Trinh Xuan Bach 22/10/2022
+    $(".header__menu").click(function(){
+        $(".sidebar").addClass("sidebar-mini");
+        $(".sidebar__title").addClass("sidebar__title-mini");
+        $(".sidebar__item").addClass("sidebar__item-mini");
+        $(".item__container").addClass("item__container-mini");
+        $(".sidebar__title").addClass("sidebar__title-mini");
+        $(".header__left").addClass("header__left-mini");
+        $(".header__logo").addClass("header__logo-mini");
+        $(".header__sidebar").addClass("header__sidebar-mini");
+        $(".header__right").addClass("header__right-mini");
+        $(".content").addClass("content-mini");
+        $(".header__menu").hide();
+        $(".header__menu-mini").show();
+    });
+    //khi click vao nut mo rong thi mo rong sidebar
+    //Trinh Xuan Bach 22/10/2022
+    $(".header__menu-mini").click(function (e) { 
+        $(".sidebar").removeClass("sidebar-mini");
+        $(".sidebar__title").removeClass("sidebar__title-mini");
+        $(".sidebar__item").removeClass("sidebar__item-mini");
+        $(".item__container").removeClass("item__container-mini");
+        $(".sidebar__title").removeClass("sidebar__title-mini");
+        $(".header__left").removeClass("header__left-mini");
+        $(".header__logo").removeClass("header__logo-mini");
+        $(".header__sidebar").removeClass("header__sidebar-mini");
+        $(".header__right").removeClass("header__right-mini");
+        $(".content").removeClass("content-mini");
+        $(".header__menu").show();
+        $(".header__menu-mini").hide();
+    });
+    //button chuc nang
+    $("button.icon").click(function(e){
+        //an cac button cu
+        //hien thi droplist
+        try{
+            employeeId = $(this).parent().parent().parent().data('id');
+            console.log(employeeId);
+
+            $(this).parent().parent().css("z-index","0");
+            $(this).next().toggle();
+            $(this).parent().parent().css("z-index","2");
+            e.stopPropagation();
+        }catch(ex){
+            console.log(ex);
+        }
+    });
+    /**
+     * Đóng các element khi click out
+     * Trịnh xuân bách - 22/10/2022
+     */
+    $("body").click(function(e){
+        $("button.icon").parent().parent().css("z-index","0");
+        $(".dropdown-list").hide();
+    });
+    /**
+     * Gọi API xóa nhân viên theo id
+     * Trịnh xuân bách - 22/10/2022
+     */
+    $("#btnDelete").click(function (e) { 
+        // Gọi api thực hiện xóa:
+        $.ajax({
+            type: "DELETE",
+            url: "https://amis.manhnv.net/api/v1/Employees/" + employeeId,
+            success: function(response) {
+                alert("Xóa thành công");
+                // Load lại dữ liệu:
+                loadData();
+            }
+        });
+    });
+    /**
+     * gán sự kiện nhấn ESC để đóng form
+     * Trịnh xuân bách - 25/10/2022
+     */
+    $(document).on('keyup', function(e) {
+        if (e.keyCode == 27)
+            $("#dialogId").hide();
+    });
+    /**
+     * gán sự kiện nhấn Insert để mở form
+     * Trịnh xuân bách - 25/10/2022
+     */
+    $(document).on('keyup', function(e) {
+        if (e.keyCode == 45)
+            $("#dialogId").show();
+    });
+    /**
+     * gán sự kiện Ctrl + F8 để save form
+     * Trịnh xuân bách - 25/10/2022
+     */
+    $(document).keydown(function(e) {
+        var key = undefined;
+        var possible = [ e.key, e.keyIdentifier, e.keyCode, e.which ];
+        while (key === undefined && possible.length > 0){
+            key = possible.pop();
+        }
+        if (key && (key == '115' || key == '83' ) && (e.ctrlKey || e.metaKey) && !(e.altKey)){
+            e.preventDefault();
+            $("#btnSave").click(saveData());
+            return false;
+        }
+        return true;
+    }); 
+
+    $('#btnCancel').on('keydown', function(e) {
+        if (e.keyCode == 9)
+        $("#dialogId input")[1].focus();
+    });
+}
+
 function validateData(){
     /**
      * Validate mã nhân viên, tên nhân viên, đơn vị trong dialog nhân vien
      * Trịnh Xuân Bách - 22/10/2022
      */
-    $("input[employeeID],input[employeeName],select[employeeDepartment]").blur(function () { 
+     $("input[employeeID],input[employeeName],select[employeeDepartment]").blur(function () { 
         //lay value
         var value = this.value;
         //kiem tra value
@@ -380,10 +400,11 @@ function validateData(){
 
 /**
  * Format date theo dd/mm/yyy
+ * Trịnh Xuân Bách - 22/10/2022
  * @param {*} date
  * @returns 
  */
-function formatDate(date) {
+ function formatDate(date) {
     try {
         if (date) {
             date = new Date(date);
@@ -406,7 +427,6 @@ function formatDate(date) {
         console.log(error);
     }
 }
-
 /**
  * Regex validate email
  * Trinh Xuan Bach - 20/10/2022

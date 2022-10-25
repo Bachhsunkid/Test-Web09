@@ -44,6 +44,20 @@
 	width: 16px;
 	height: 14px;
     margin-left: 12px;
+    cursor: pointer;
+}
+.header__menu-mini{
+    background-image: url('../../assets/img/Sprites.64af8f61.svg');
+    background-position: -847px -35px;
+    background-repeat: no-repeat;
+	width: 16px;
+	height: 14px;
+}
+.header__menu-mini:hover{
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -316px -37px;
+	width: 16px;
+	height: 14px;
+    cursor: pointer;
 }
 .user__ring{
     background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -257px -32px;

@@ -4,8 +4,9 @@
     overflow-x: hidden;
     width: 200px;
 }
+
 .sidebar__container{
-    padding: 20px 12px 0 12px;
+    padding: 20px 13px 0 12px;
 }
 .sidebar__item{
     height: 44px;
@@ -113,4 +114,41 @@
 .item2-selected{
     background-position: -78px -1588px;
     font-weight: 600;
+}
+
+/* khi nhan thu nho */
+
+.sidebar-mini{
+    width: 73px;
+    transition: 0.3s ease-in;
+}
+.sidebar__title-mini{
+    font-size: 0;
+}
+.sidebar__item-mini{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item__container-mini{
+    height: 44px;
+    width: 48px;
+    border-radius: 6px;
+}
+.header__left-mini{
+    width: 73px;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+.header__logo-mini, .header__sidebar-mini{
+    display: none;
+    margin: 0;
+}
+.header__right .header__menu-mini{
+    display: none;
+}
+.content-mini{
+    width: calc(100% - 73px) !important;
 }

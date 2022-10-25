@@ -23,6 +23,9 @@ body {
     font-family: MISA Fonts;
     margin: 0;
 }
+.no-margin{
+    margin: 0;
+}
 
 
 
